@@ -7,8 +7,8 @@ import json
 import requests
 
 
-clientID="f69817e6d0431d057bd66f857eaad0fa"
-clientsecret="kKL9S7jLULUh4mG1gPSvEwzCBzpYXrc3aHScdRbSAeLCVD4pEhtstvoZEvmdeZve"
+clientID=""
+clientsecret=""
 auth = "{0}:{1}".format(clientID, clientsecret)
 encodedBytes=base64.b64encode(auth.encode("utf-8"))
 authStr = str(encodedBytes, "utf-8")
@@ -61,9 +61,9 @@ print(response.text)
 
 
 
-apiToken = "GJykpEExRL0v5zHgGsugf5LSD3eubyfbaTQlxrbq"  # 1
+apiToken = ""  # 1
 dataCenter = "fra1" # 2
-surveyId = "SV_aW8vfOfS37AiEAd"    # 3
+surveyId = ""    # 3
 
 '''
 baseUrl = "https://{0}.qualtrics.com/API/v3/surveys/{1}".format(dataCenter, surveyId)
